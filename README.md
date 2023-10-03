@@ -11,7 +11,7 @@
    - To run your backend, navigate to the backend project directory and use the appropriate command 
    - To run your frontend, navigate to the frontend project directory and use the appropriate command (e.g., npm run dev).
 
-4. Run the `KasP_reserve-proxy` project that you cloned earlier. You might need to navigate to its directory and run any setup or start commands specific to that project.
+4. Run the `KasP_reserve-proxy` project that you cloned earlier. You might need to navigate to its directory and run any setup or start commands specific to that project. using `node index.js`
 
 Finally, open a web browser and navigate to `http://localhost:3000` to check if everything is working as expected.
 
