@@ -5,7 +5,7 @@ const app = express();
 
 // Create a proxy middleware for /api/ backend
 const apiProxy = createProxyMiddleware('/api', {
-  target: 'http://localhost:8080',
+  target: 'http://localhost:8083',
   changeOrigin: false,
 });
 
