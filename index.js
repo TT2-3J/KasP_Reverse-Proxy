@@ -9,6 +9,11 @@ const apiProxy = createProxyMiddleware('/api', {
   changeOrigin: false,
 });
 
+const fileProxy = createProxyMiddleware('/files', {
+  target: 'http://localhost:8080',
+  changeOrigin: false,
+});
+
 // Create a proxy middleware for / frontend
 const rootProxy = createProxyMiddleware('/', {
   target: 'http://localhost:5173',
@@ -19,6 +24,7 @@ const rootProxy = createProxyMiddleware('/', {
 app.use(cors());
 
 app.use('/api', apiProxy);
+app.use('/files', fileProxy);
 app.use('/', rootProxy);
 
 
